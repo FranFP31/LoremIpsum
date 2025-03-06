@@ -1,29 +1,47 @@
 /* Reset básico */
 * {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
+  background: -moz-linear-gradient(top, hsl(71, 65%, 72%) 0%, #bfbd6d 100%);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   font-family: Arial, sans-serif;
   padding: 20px;
-  background-color: #f8f9fa;
+
+}
+.CABECERA {
+  width: 10%;
+  height: 100px;
+  border-radius: 50%;
+  border:  10px solid greenyellow;
+  border-style: groove double;
+  text-align: center;
+  background-color: green;
+  box-shadow: black;
+  color: whitesmoke;
+}
+.porro{
+  padding-right: 10px;
+  padding-left: -90%;
+  padding-top: 10px;
+  text-align: center;
+  background-color:green;
+  color:white;
+}
+.header{
+  background-color: green;
 }
 
-header {
-  background: #333;
-  color: white;
-  padding: 1rem;
-  text-align: center;
-  border-radius: 8px;
-}
 
 .nav {
-  background: #f4f4f4;
+  text-decoration: none;
+  border-radius: 20%;
   padding: 1rem;
   border-radius: 8px;
 }
@@ -31,13 +49,14 @@ header {
 main {
   display: flex;
   flex: 1;
-  background: white;
+  border-radius: 20%;
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .aside {
+  border-radius: 20%;
   background: #f4f4f4;
   padding: 1rem;
   border-left: 1px solid #ccc;
@@ -46,6 +65,7 @@ main {
 
 /* Estructura del layout */
 .container {
+  border-radius: 20%;
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   gap: 1rem;
@@ -55,10 +75,18 @@ main {
   margin: 0 auto;
   border-radius: 8px;
 }
-
+.container a{
+  font-size: 1,5em;
+  text-decoration: none;
+}
+.container a:hover{
+  color:green;
+  font-size: 1,5%;
+}
 .container nav {
   grid-column: 1;
 }
+
 
 .container main {
   grid-column: 2;
@@ -69,8 +97,11 @@ main {
 }
 
 footer {
-  background: #333;
-  color: white;
+  border:  10px solid black;
+  border-style: groove double;
+  border-radius: 5%;
+  background: yellow;
+  color: black;
   text-align: center;
   padding: 1rem;
   margin-top: auto;
@@ -78,13 +109,22 @@ footer {
 
 /* Indicadores de etiquetas semánticas */
 nav {
-  border: 3px solid green;
+  text-align: center;
+  border:  10px solid black;
+  border-style: groove double;
+  border-radius: 5%;
 }
 
 main {
-  border: 3px solid blue;
+  border:  10px solid black;
+  border-style: groove double;
 }
+ 
 
 aside {
-  border: 3px solid orange;
+  text-align: center;
+  text-decoration: none;
+  border:  10px solid black;
+  border-style: groove double;
+  border-radius: 5%;
 }
