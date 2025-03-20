@@ -26,6 +26,7 @@ header, footer {
 .container {
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -35,11 +36,11 @@ nav {
   text-decoration: none;
   position: sticky;
   top: 0;
+  text-align: center;
   align-items: center;
   background-color: #2ecc71;
-  height: 200px;
-  padding: 20px;
   text-decoration: none;
+  min-width: 20%;
 }
 .ul{
   text-decoration: none;
@@ -52,28 +53,28 @@ main {
 aside {
   position: sticky;
   top: 0;
-
-  height: 275px;
-  width: 200px;
   background-color: #e74c3c;  
   text-align: center;
   text-decoration: none;
-  padding: 20px;
+min-width: 20%;
 }
 /*Media Query para moviles*/
 @media screen and (max-width: 786px) {
-  .container {
-    
+  .container {    
     flex-direction: column;
-
   }
   nav {
+    min-width: 100%;
+    order: -1;
     position: top;
     height: 100px;
   }
   aside {
+    min-width: 100%;
+    order: -1;
     position: top;
     width: 100%;
+    
   }
   body{
     position:2;
@@ -84,12 +85,10 @@ aside {
       flex-direction: column;
     }
     nav {
-      order: -1;
       position: top;
       height: 100px;
     }
     aside {
-      order: 0;
       position: top;
       width: 100%;
     }
